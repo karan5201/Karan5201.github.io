@@ -272,5 +272,73 @@
         "Bereitstellung eines fuehrungsgerechten Dashboards mit Filtern, Parametern und konkreten Handlungsempfehlungen."
       ]
     }
+  },
+  {
+    "id": "manufacturing-ops-analytics",
+    "tool": "Python",
+    "icon": "🏭",
+    "links": [
+      {
+        "label": "GitHub Repo",
+        "url": "https://github.com/karan5201/automotive-manufacturing-ops-analytics"
+      }
+    ],
+    "en": {
+      "title": "Manufacturing Ops Analytics — OEE, Quality & Supplier OTIF",
+      "domain": "Manufacturing Analytics",
+      "summary": "End-to-end BI pipeline (SQL data mart + Python + Streamlit) calculating OEE, defect PPM and supplier OTIF across automotive production lines.",
+      "details": [
+        "Built a SQL data mart (fact_production, fact_supplier_deliveries, dim_lines) over 18 months of shift-level production logs across 5 lines and 4 plants.",
+        "Engineered OEE (Availability x Performance x Quality), defect PPM and supplier OTIF metrics in Python, plus an auditable data-quality report.",
+        "Identified that changeover and scheduled maintenance together caused ~49% of downtime, and that 3 of 12 suppliers fell below the 70% OTIF benchmark.",
+        "Delivered an interactive Streamlit + Plotly dashboard with OEE trend, downtime Pareto and supplier OTIF ranking, filterable by plant/line."
+      ]
+    },
+    "de": {
+      "title": "Manufacturing Ops Analytics — OEE, Qualitaet & Lieferanten-OTIF",
+      "domain": "Fertigungsanalytik",
+      "summary": "End-to-End-BI-Pipeline (SQL-Datenmodell + Python + Streamlit) zur Berechnung von OEE, Fehlerquote (PPM) und Lieferanten-OTIF fuer Automobil-Produktionslinien.",
+      "details": [
+        "Aufbau eines SQL-Datenmodells (fact_production, fact_supplier_deliveries, dim_lines) auf Basis von 18 Monaten schichtgenauer Produktionsdaten ueber 5 Linien und 4 Standorte.",
+        "Berechnung von OEE (Verfuegbarkeit x Leistung x Qualitaet), Fehlerquote in PPM und Lieferanten-OTIF in Python inklusive nachvollziehbarem Datenqualitaetsbericht.",
+        "Ermittlung, dass Ruestzeiten und geplante Wartung zusammen ca. 49% der Stillstandszeiten verursachen und 3 von 12 Zulieferern unter dem 70%-OTIF-Zielwert liegen.",
+        "Bereitstellung eines interaktiven Streamlit/Plotly-Dashboards mit OEE-Trend, Stillstands-Pareto-Analyse und Lieferanten-Ranking, filterbar nach Standort/Linie."
+      ]
+    }
+  },
+  {
+    "id": "retail-sales-customer-analytics",
+    "tool": "Python",
+    "icon": "🛒",
+    "links": [
+      {
+        "label": "GitHub Repo",
+        "url": "https://github.com/karan5201/retail-sales-customer-analytics"
+      }
+    ],
+    "en": {
+      "title": "Retail Sales & Customer Segmentation Analytics",
+      "domain": "Retail Analytics",
+      "summary": "End-to-end BI pipeline (SQL data mart + Python RFM/cohort analysis + Streamlit dashboard) segmenting retail customers and surfacing revenue drivers.",
+      "details": [
+        "Built a star-schema SQL data mart (fact_sales, dim_customers, dim_products) over 26 months / ~39K transactions across 800 customers and 60 SKUs.",
+        "Cleaned and documented every data-quality issue (duplicates, missing IDs, price typos, returns) with an auditable quality report.",
+        "Performed RFM (Recency/Frequency/Monetary) customer segmentation and monthly cohort retention analysis in Python.",
+        "Found that 'Champions' and 'Loyal Customers' segments (a minority of customers) drove the majority of ~EUR 8.5M in revenue, and retention drops fastest in the first 2 months.",
+        "Delivered an interactive Streamlit + Plotly dashboard with revenue KPIs, RFM segment distribution and a cohort retention heatmap."
+      ]
+    },
+    "de": {
+      "title": "Einzelhandels-Umsatz- und Kundensegmentierungsanalyse",
+      "domain": "Einzelhandelsanalytik",
+      "summary": "End-to-End-BI-Pipeline (SQL-Datenmodell + Python RFM-/Kohortenanalyse + Streamlit-Dashboard) zur Kundensegmentierung und Identifikation der Umsatztreiber im Einzelhandel.",
+      "details": [
+        "Aufbau eines Star-Schema-Datenmodells (fact_sales, dim_customers, dim_products) auf Basis von 26 Monaten / ca. 39.000 Transaktionen ueber 800 Kunden und 60 Produkte.",
+        "Bereinigung und Dokumentation aller Datenqualitaetsprobleme (Duplikate, fehlende IDs, Preisfehler, Retouren) mit nachvollziehbarem Qualitaetsbericht.",
+        "Durchfuehrung einer RFM-Segmentierung (Recency/Frequency/Monetary) sowie einer monatlichen Kohorten-Retentionsanalyse in Python.",
+        "Erkenntnis, dass die Segmente 'Champions' und 'Loyal Customers' (eine Kundenminderheit) den Grossteil der ca. 8,5 Mio. Euro Umsatz erwirtschaften und die Kundenbindung in den ersten 2 Monaten am staerksten sinkt.",
+        "Bereitstellung eines interaktiven Streamlit/Plotly-Dashboards mit Umsatz-KPIs, RFM-Segmentverteilung und Kohorten-Retention-Heatmap."
+      ]
+    }
   }
 ]
